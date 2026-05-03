@@ -1,0 +1,742 @@
+
+:root {
+  --tri: #3282b8;
+  --tri1: #77bcea;
+  --tri2: #0a2540;
+  --tri3: whitesmoke;
+  --tri4: #1b262c3c;
+  --tri5: #0b4c78;
+  --tri6: #02162abf;
+  --tri7: #0a254042;
+}
+
+@font-face {
+  font-family: margesta;
+  src: url(./fonts/Margesta-BF69537bbd0eaa1.otf);
+}
+@font-face {
+  font-family: modeone;
+  src: url(./fonts/Modeone-BF6953e7c60f9a5.otf);
+}
+@font-face {
+  font-family: notreality;
+  src: url(./fonts/NotRealityRegular-Yq91a.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+}
+
+section.allElems {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background-color: var(--tri1);
+  overflow: auto;
+  position: absolute;
+}
+.allElems header {
+  height: 250px;
+  width: 100%;
+  background: url(https://plus.unsplash.com/premium_photo-1663127326631-5ee411a224d0?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+  /* background-position: top; */
+  /* background-position: top center;
+    background-position: center top; */
+  background-position: 70% 55%;
+  margin-bottom: 40px;
+  border-radius: 30px;
+  padding: 30px 40px 60px;
+  position: relative;
+  -webkit-box-shadow: 0 5px 30px var(--tri5);
+  box-shadow: 0 5px 30px var(--tri5);
+}
+.allElems .headline {
+  height: 70px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 34px;
+  background-color: var(--tri7);
+  margin-bottom: 30px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 5px 10px var(--tri5);
+  box-shadow: 0 5px 10px var(--tri5);
+  color: var(--tri2);
+  position: relative;
+}
+.allElems .headline h1 {
+  font-size: 32px;
+  /* margin-left: 1%; */
+}
+.allElems .headline .theme {
+  position: absolute;
+  right: 2%;
+  padding: 8px 8px;
+  /* top: 3%; */
+  /* background-color: var(--tri2); */
+  -webkit-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+
+.theme h4 {
+  color: var(--tri1);
+  font-size: 20px;
+  background-color: var(--tri6);
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  pointer-events: none;
+
+  /* display: flex; 
+    align-items: center;
+    justify-content: center; */
+}
+.theme:active {
+  scale: 0.88;
+}
+.header1 {
+  position: absolute;
+  top: 15%;
+  left: 6%;
+  text-align: left;
+}
+.header2 {
+  position: absolute;
+  top: 10%;
+  right: 7%;
+  text-align: right;
+}
+
+header .header1 h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+header .header1 h2 {
+  font-size: 35px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+header .header1 h4 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+header .header2 h2 {
+  font-size: 50px;
+  margin-top: 10px;
+}
+header .header2 h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+header .header2 h3 {
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.allElems .allFeatures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  /* gap :25px; */
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.elem {
+  width: 270px;
+  height: 280px;
+  /* padding: 20px; */
+  border-radius: 15px;
+  font-size: 30px;
+  font-weight: 100;
+  font-family: notreality;
+  /* background-color: var(--tri); */
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  color: var(--tri2);
+  cursor: pointer;
+  -webkit-box-shadow: 0 5px 30px var(--tri5);
+  box-shadow: 0 5px 30px var(--tri5);
+}
+
+.elem img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.elem h2 {
+  position: absolute;
+  font-size: 28px;
+  bottom: 0;
+  right: 4%;
+}
+
+.elem:active {
+  scale: 0.9;
+}
+.elem:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+.fullElem {
+  height: 100%;
+  width: 100%;
+  background-color: var(--tri1);
+  display: none;
+  padding: 30px;
+  /* font-size: 30px; */
+  position: absolute;
+  font-family: margesta;
+}
+
+.back {
+  position: absolute;
+  right: 3%;
+  border-radius: 5px;
+  padding: 4px;
+  padding-right: 10px;
+  border: none;
+  font-size: 20px;
+  font-weight: 200;
+  background-color: var(--tri4);
+  color: var(--tri2);
+  cursor: pointer;
+  -webkit-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+}
+.back:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.back:active {
+  scale: 0.9;
+}
+
+/* .nav-container{
+    width: 100%;
+    height: 60px;
+    background-color: var(--pri);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav{
+    display: flex;
+    gap: 40px;
+    transition: all ease 0.3s;
+}
+.nav a:active{
+    scale: 0.90;
+}
+.nav a{
+    font-size: 20px;
+    color: var(--tri1);
+   text-decoration: none; 
+}
+section.navPage{
+    height: 100%;
+    width: 100%;
+    background-color: var(--tri1);
+    font-size: 40px;
+}
+.text1{
+    background-color: var(--tri);
+} */
+
+.todo-list-fullpage h2 {
+  font-size: 60px;
+}
+.todo-list-fullpage .todo-container {
+  height: 80%;
+  width: 100%;
+  margin-top: 40px;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.todo-list-fullpage .todo-container .addTask {
+  height: 100%;
+  width: 33%;
+  border-radius: 20px;
+  background-color: var(--tri2);
+  overflow: auto;
+}
+.todo-list-fullpage .todo-container .allTask {
+  height: 100%;
+  width: 64%;
+  background-color: var(--tri2);
+  border-radius: 15px;
+  overflow: auto;
+}
+
+.todo-list-fullpage .todo-container .addTask form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.todo-container .addTask form #task-input {
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 7px;
+  background-color: var(--tri1);
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.todo-container .addTask form textarea {
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 7px;
+  background-color: var(--tri1);
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.todo-container .addTask form button {
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 22px;
+  border-radius: 7px;
+  background-color: var(--tri3);
+  font-family: margesta;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.todo-container .addTask form button:active {
+  scale: 0.9;
+}
+
+.todo-list-fullpage .todo-container .allTask {
+  height: 100%;
+  width: 64%;
+  background-color: var(--tri2);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--tri1);
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.task h5 {
+  color: var(--tri2);
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.task h5 span {
+  background-color: red;
+  color: var(--tri3);
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+.task h5 span.true {
+  opacity: 1;
+}
+.task h5 span.false {
+  opacity: 0;
+}
+.task button {
+  padding: 10px 20px;
+  color: var(--tri2);
+  background-color: var(--tri3);
+  font-size: 18px;
+  border-radius: 7px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+.task button:active {
+  scale: 0.9;
+}
+
+.mark-imp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+  color: var(--tri3);
+  gap: 20px;
+  /* font-size: 20px; */
+}
+.mark-imp input {
+  scale: 1.7;
+}
+.mark-imp label {
+  font-size: 20px;
+}
+
+.daily-planner-fullpage h2 {
+  font-size: 60px;
+}
+
+.daily-planner-fullpage .day-planner {
+  background-color: var(--tri2);
+  height: 85%;
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 15px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.daily-planner-fullpage .day-planner .day-planner-time {
+  /* background-color: rebeccapurple; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 49%;
+  position: relative;
+  margin-bottom: 15px;
+}
+.day-planner .day-planner-time p {
+  position: absolute;
+  font-size: 18px;
+  top: 12%;
+  left: 2%;
+}
+.day-planner .day-planner-time input {
+  padding: 10px 50px;
+  width: 100%;
+  background-color: var(--tri1);
+  border-radius: 5px;
+  border: none;
+  font-size: 30px;
+  padding-top: 32px;
+  outline: none;
+  /* margin-bottom: 15px; */
+}
+
+.motivation-fullPage-container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.motivational-fullpage .motivation-container {
+  height: 350px;
+  width: 70%;
+  border-radius: 50px;
+  position: relative;
+}
+
+.motivational-fullpage .motivation-container::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: var(--tri);
+  scale: 1.15;
+  z-index: 8;
+  -webkit-filter: blur(100px);
+  filter: blur(100px);
+  border-radius: 50px;
+}
+
+.motivational-fullpage .motivation-container .motivation-wrapper {
+  z-index: 10;
+  position: absolute;
+  border: 3px solid var(--tri3);
+  width: 100%;
+  background-color: var(--tri2);
+  border-radius: 40px;
+  padding: 17px;
+}
+
+.motivation-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+.motivation-1 h2 {
+  background-color: var(--tri1);
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 32px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 500;
+  text-align: right;
+}
+
+.motivation-2 {
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.motivation-2 h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--tri1);
+}
+
+.motivation-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+.motivation-3 h2 {
+  background-color: var(--tri1);
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 32px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 500;
+  text-align: right;
+}
+
+.motivational-fullpage .motivation-container .motivation-wrapper img {
+  position: absolute;
+  height: 100px;
+  right: 5%;
+  top: 5%;
+  opacity: 0.5;
+}
+
+.pomodoro-fullpage h2 {
+  font-size: 60px;
+}
+
+.pomodoro-fullpage .pomo-timer {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.pomo-timer h2 {
+  font-size: 140px;
+}
+
+.pomo-timer button {
+  background-color: var(--tri2);
+  border-radius: 5px;
+  border: none;
+  padding: 15px 40px;
+  margin-top: 20px;
+  margin: 10px;
+  color: var(--tri1);
+  font-size: 30px;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 3px 0px var(--tri2);
+  box-shadow: 3px 3px 0px var(--tri2);
+  -webkit-transition: all ease 0.1s;
+  -o-transition: all ease 0.1s;
+  transition: all ease 0.1s;
+  font-weight: 700;
+}
+.pomo-timer button:active {
+  scale: 0.95;
+  -webkit-box-shadow: 0px 0px 0px var(--tri2);
+  box-shadow: 0px 0px 0px var(--tri2);
+}
+.pomodoro-fullpage .session {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  background-color: var(--tri2);
+  font-size: 28px;
+  border-radius: 5px;
+  padding: 15px 40px;
+  color: var(--tri1);
+}
+
+
+/* Added improvements */
+body {
+    font-family: Arial, sans-serif;
+}
+
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/* UI Enhancement */
+.card, .container {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+
+/* Dark Mode Feature */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .card {
+    background-color: #1e1e1e;
+}
+
+/* Icon spacing */
+h1, h2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

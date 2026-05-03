@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productivity Dashboard</title>
+    <link
+      rel="shortcut icon"
+      href="./apple-touch-icon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background:#f4f6f9;">
+    <header style="text-align:center;padding:10px;background:#4CAF50;color:white;">
+        <h2></h2>
+        <p></p>
+    </header>
+    
+    <div id="main">
+      <!-- <div class="nav-container">
+            <div class="nav">
+                <a href="./index.html">Home</a>
+                <a href="./Today.html">Today</a>
+                <a href="./thisWeek.html">This Week</a>
+                <a href="./thisMonth.html">This Month</a>
+                <a href="./Reports.html">Reports</a>
+            </div>
+        </div> -->
+      <section class="allElems">
+        <div class="headline">
+          <h1>Productivity Dashboard</h1>
+          <div class="theme">
+            <h4>Change Theme</h4>
+          </div>
+        </div>
+        <header>
+          <div class="header1">
+            <h2></h2>
+            <h1></h1>
+            <h4>Akola (MH) (GJ)</h4>
+          </div>
+          <div class="header2">
+            <h2></h2>
+            <h4></h4>
+            <h3 class="precipitation"></h3>
+            <h3 class="humidity"></h3>
+            <h3 class="wind"></h3>
+          </div>
+        </header>
+        <div class="allFeatures">
+          <div class="todo elem" id="0">
+            <img
+              src="https://media.istockphoto.com/id/1408257988/photo/document-task-management-todo-check-list-work-project-plan-concept-fast-checklist-posting-plan.jpg?s=612x612&w=0&k=20&c=HBSP_vZUoiipyjpVM4w6lm3xqjBVJ8Z5y8tsjG4R2n4="
+              alt=""
+            />
+            <h2>To Do List</h2>
+          </div>
+          <div class="daily elem" id="1">
+            <img
+              src="https://media.istockphoto.com/id/1411005272/photo/3d-calendar-with-check-mark-in-date-and-bell-notification-meeting-reminder-planner-daily-work.jpg?s=612x612&w=0&k=20&c=ZjThoCG7_n-BP2kXWqjJpYAJ8tMk9oT6Yvytw9x9f8I="
+              alt=""
+            />
+            <h2>Daily Planner</h2>
+          </div>
+          <div class="moti elem" id="2">
+            <img
+              src="https://media.istockphoto.com/id/1423559103/photo/success-business-graph-on-goal-achievement-strategy-chart-concept-3d-background-with-creative.jpg?s=612x612&w=0&k=20&c=o9X6jIyCflj9Ykir2iAPdd38gpCSApAbc8sa3hQsJ7k="
+              alt=""
+            />
+            <h2>Motivation</h2>
+          </div>
+          <div class="pomo elem" id="3">
+            <img
+              src="https://media.istockphoto.com/id/2191616873/photo/stopwatch-with-blue-frame-and-red-timer-section.jpg?s=612x612&w=0&k=20&c=Z1-i9rS3ytNfwqPkSvLElh6tTkWkSm5TlsSyGAcx6RQ="
+              alt=""
+            />
+            <h2>Pomodoro Timer</h2>
+          </div>
+          <div class="goals elem" id="4">
+            <img
+              src="https://media.istockphoto.com/id/2177154066/photo/calendar-with-target-and-arrow.jpg?s=612x612&w=0&k=20&c=0eDF2Wd5SdbqDfPB23lUD1yLA2Nf3lNeSDbOxXFeC98="
+              alt=""
+            />
+            <h2>Daily Goals</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="fullElem todo-list-fullpage">
+        <button class="back" id="0"><i class="ri-close-fill"></i>Close</button>
+        <h2>Your Personilized Task List</h2>
+
+        <div class="todo-container">
+          <div class="addTask">
+            <form>
+              <!-- <h3>Add Task</h3> -->
+              <input
+                id="task-input"
+                type="text"
+                placeholder="Enter Your Task"/>
+              <textarea placeholder="Enter Details" name="" id=""></textarea>
+              <div class="mark-imp">
+                <input type="checkbox" name="" id="check" />
+                <label for="check">Mark as Important!!</label>
+              </div>
+              <button>Add Task</button>
+            </form>
+          </div>
+          <div class="allTask">
+            <!-- <div class="task">
+                        <h5>Gym</h5>
+                        <button>Mark as Completed</button>
+                    </div>
+                    <div class="task">
+                        <h5>Drink Water</h5>
+                        <button>Mark as Completed</button>
+                    </div>
+                    <div class="task">
+                        <h5>Get Some Healthy Food</h5>
+                        <button>Mark as Completed</button>
+                    </div>
+                    <div class="task">
+                        <h5>Entertainment Time</h5>
+                        <button>Mark as Completed</button>
+                    </div>
+                    <div class="task">
+                        <h5>Sleep for 8 hours</h5>
+                        <button>Mark as Completed</button>
+                    </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="fullElem daily-planner-fullpage">
+        <button class="back" id="1"><i class="ri-close-fill"></i>Close</button>
+        <h2>Plan Your Day To Be More Productive</h2>
+
+        <div class="day-planner"></div>
+      </section>
+      <section class="fullElem motivational-fullpage">
+        <button class="back" id="2"><i class="ri-close-fill"></i>Close</button>
+        <div class="motivation-fullPage-container">
+          <div class="motivation-container">
+            <div class="motivation-wrapper">
+              <img src="./icons8-quote-100.png" alt="" />
+              <div class="motivation-1">
+                <h2>Quote Of The Day</h2>
+              </div>
+              <div class="motivation-2">
+                <h1></h1>
+              </div>
+              <div class="motivation-3">
+                <h2></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fullElem pomodoro-fullpage">
+        <button class="back" id="3"><i class="ri-close-fill"></i>Close</button>
+        <h2>Study Withm Me!</h2>
+        <h4 class="session">Walk Session</h4>
+        <div class="pomo-timer">
+          <h2>25:00</h2>
+          <button class="start-timer">Start</button>
+          <button class="pause-timer">Pause</button>
+          <button class="reset-timer">Reset</button>
+        </div>
+      </section>
+      <section class="fullElem daily-goals-fullpage">
+        <button class="back" id="4"><i class="ri-close-fill"></i>Close</button>
+        <h1>Daily Goals</h1>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  
+<button onclick="toggleDarkMode()" style="position:fixed;bottom:20px;right:20px;padding:10px;">🌙 Toggle Mode</button>
+
+<script>
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+</body>
+
+</html>
